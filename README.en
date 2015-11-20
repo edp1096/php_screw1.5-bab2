@@ -1,0 +1,42 @@
+--------------------
+php_screw
+(C) 2007, Kunimasa Noda/PM9.com, Inc. <http://www.pm9.com, kuni@pm9.com>
+see file LICENSE for license details
+--------------------
+2015-11, bab2, Robert Sung-wook Shin. ported php_screw to MS-Windows. <http://enjoytools.net, edp1096@naver.com>
+--------------------
+
+Package contents
+ * PHP extension sources
+ * Encrypt/decrypt sources
+ * Sources for linux platform ({VC solution dir}/z_linux)
+Salt key manage: {VC solution dir}/z_key_manage/my_screw.h
+
+
+Compiling condition
+
+OS's / PHP's version
+MS-Windows: MS-Windows 8.1 / PHP 5.6.15, 7.0.0RC7
+Linux: CentOS 6.3 / PHP 5.3.3
+
+Compiler
+MS-Windows: Microsoft VisualStudio 2012 Express / Visual C 2012 (VC11)
+(PHP7RC7 - Visual C 2015 (VC14))
+Linux: gcc 4.4.7
+
+
+More preparation
+
+PHP
+ * Prepare inside solution dir
+  - ext, main, TSRM, win32, Zend
+   -> Not need filed/dirs in ext dir except standard, also not need {src_root}/standard/tests dir
+  - Copy file: {src_root}/win32/build/config.w32.h.in -> {src_root}/main/config.w32.h
+ * Library from php binaries(need only a file -> dev/php5ts.lib)
+  - {VC solution dir}/include_php_dev/php5ts.lib
+
+
+Please see below link when you need to check modification, references, histories.
+http://enjoytools.net/xe/index.php?document_srl=2018
+
+[end of this file]
