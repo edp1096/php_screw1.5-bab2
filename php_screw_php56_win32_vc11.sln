@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "php_screw_decode_vc11", "php_screw_decode_vc11\zencode_test_read_vc11.vcxproj", "{D51B8E3D-47EC-4BB5-8EDB-35E26A187A93}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "php_screw_encode_vc11", "php_screw_encode_vc11\zencode_test_write.vcxproj", "{D3B43C05-DA94-4765-A53C-877ED1E37076}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "php_screw_php_ext_vc11", "php_screw_php5615_ext_vc11\php_screw_php56_win32_vc11.vcxproj", "{5A5BB619-7F2D-4EBB-B05B-972F8EDD0BD3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "z_key_manage", "z_key_manage\z_key_manage.vcxproj", "{76AD3262-B786-4C52-A13F-2EB68BC75AD2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D51B8E3D-47EC-4BB5-8EDB-35E26A187A93}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D51B8E3D-47EC-4BB5-8EDB-35E26A187A93}.Debug|Win32.Build.0 = Debug|Win32
+		{D51B8E3D-47EC-4BB5-8EDB-35E26A187A93}.Release|Win32.ActiveCfg = Release|Win32
+		{D51B8E3D-47EC-4BB5-8EDB-35E26A187A93}.Release|Win32.Build.0 = Release|Win32
+		{D3B43C05-DA94-4765-A53C-877ED1E37076}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D3B43C05-DA94-4765-A53C-877ED1E37076}.Debug|Win32.Build.0 = Debug|Win32
+		{D3B43C05-DA94-4765-A53C-877ED1E37076}.Release|Win32.ActiveCfg = Release|Win32
+		{D3B43C05-DA94-4765-A53C-877ED1E37076}.Release|Win32.Build.0 = Release|Win32
+		{5A5BB619-7F2D-4EBB-B05B-972F8EDD0BD3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5A5BB619-7F2D-4EBB-B05B-972F8EDD0BD3}.Debug|Win32.Build.0 = Debug|Win32
+		{5A5BB619-7F2D-4EBB-B05B-972F8EDD0BD3}.Release|Win32.ActiveCfg = Release|Win32
+		{5A5BB619-7F2D-4EBB-B05B-972F8EDD0BD3}.Release|Win32.Build.0 = Release|Win32
+		{76AD3262-B786-4C52-A13F-2EB68BC75AD2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{76AD3262-B786-4C52-A13F-2EB68BC75AD2}.Debug|Win32.Build.0 = Debug|Win32
+		{76AD3262-B786-4C52-A13F-2EB68BC75AD2}.Release|Win32.ActiveCfg = Release|Win32
+		{76AD3262-B786-4C52-A13F-2EB68BC75AD2}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
