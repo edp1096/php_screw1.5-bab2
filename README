@@ -35,4 +35,8 @@ PHP
  * 바이너리(dev/php5ts.lib 만 있으면 됨)
   - {VC 솔루션 루트}/include_php_dev/php5ts.lib
 
+
+수정 내역이나 참고한 링크, 히스토리는 아래 링크 참고하세요.
+http://enjoytools.net/xe/index.php?document_srl=2018
+
 [end of this file]
