@@ -7,4 +7,4 @@ descrew: descrew.c zencode.c
 	gcc -o descrew descrew.c zencode.c -lz
 
 clean:
-	/bin/rm *.o *.so screw
+	/bin/rm *.o *.so screw descrew
