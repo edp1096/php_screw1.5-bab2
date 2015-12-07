@@ -28,7 +28,7 @@ Linux: gcc 4.4.7
 More preparation
 
 PHP
- * Prepare inside solution dir
+ * Copy 4 folders at {VC solution dir}/include_php_src from php source.
   - ext, main, TSRM, win32, Zend
    -> Not need filed/dirs in ext dir except standard, also not need {src_root}/standard/tests dir
   - Copy file: {src_root}/win32/build/config.w32.h.in -> {src_root}/main/config.w32.h
