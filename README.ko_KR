@@ -6,37 +6,37 @@ see file LICENSE for license details
 2015-11, bab2 ported php_screw to MS-Windows. <http://enjoytools.net, edp1096@naver.com>
 --------------------
 
-±¸¼º¹°
- * php extension ¼Ò½º
- * encrypt/decrypt ¼Ò½º
- * ¸®´ª½º¿ë ¼Ò½º ({VC¼Ö·ç¼Ç ·çÆ®}/z_linux)
-Å° º¯°æ: {VC¼Ö·ç¼Ç ·çÆ®}/z_key_manage/my_screw.h
+êµ¬ì„±ë¬¼
+ * php extension ì†ŒìŠ¤
+ * encrypt/decrypt ì†ŒìŠ¤
+ * ë¦¬ëˆ…ìŠ¤ìš© ì†ŒìŠ¤ ({VCì†”ë£¨ì…˜ ë£¨íŠ¸}/z_linux)
+í‚¤ ë³€ê²½: {VCì†”ë£¨ì…˜ ë£¨íŠ¸}/z_key_manage/my_screw.h
 
 
-ÄÄÆÄÀÏ È¯°æ
+ì»´íŒŒì¼ í™˜ê²½
 
-OS / PHP ¹öÀü
-À©µµ¿ì: MS-Windows 8.1 / PHP 5.6.15, 7.0.0RC7
-¸®´ª½º: CentOS 6.3 / PHP 5.3.3
+OS / PHP ë²„ì „
+ìœˆë„ìš°: MS-Windows 8.1 / PHP 5.6.15, 7.0.0RC7
+ë¦¬ëˆ…ìŠ¤: CentOS 6.3 / PHP 5.3.3
 
-ÄÄÆÄÀÏ·¯
-À©µµ¿ì: Microsoft VisualStudio 2012 Express / Visual C 2012 (VC11)
+ì»´íŒŒì¼ëŸ¬
+ìœˆë„ìš°: Microsoft VisualStudio 2012 Express / Visual C 2012 (VC11)
 (PHP7RC7 - Visual C 2015 (VC14))
-¸®´ª½º: gcc 4.4.7
+ë¦¬ëˆ…ìŠ¤: gcc 4.4.7
 
 
-Ãß°¡ ÁØºñ
+ì¶”ê°€ ì¤€ë¹„
 
 PHP
- * ¼Ò½º(¿¡¼­ ¾Æ·¡ Æú´õ ÁØºñ)
+ * ì†ŒìŠ¤(ì—ì„œ ì•„ë˜ 4ê°œì˜ í´ë”ë¥¼ ì†”ë£¨ì…˜ ë£¨íŠ¸í´ë”ë¡œ ë³µì‚¬)
   - ext, main, TSRM, win32, Zend
-   -> extÆú´õ´Â standard¸¸ ÀÖÀ¸¸é µÇ°í, ±×¸¶Àúµµ {src_root}/standard/tests Æú´õ´Â Áö¿öµµ ¹«¹æÇÔ
-  - ÆÄÀÏ º¹»ç: {src_root}/win32/build/config.w32.h.in -> {src_root}/main/config.w32.h
- * ¹ÙÀÌ³Ê¸®(dev/php5ts.lib ¸¸ ÀÖÀ¸¸é µÊ)
-  - {VC ¼Ö·ç¼Ç ·çÆ®}/include_php_dev/php5ts.lib
+   -> extí´ë”ëŠ” standardë§Œ ìˆìœ¼ë©´ ë˜ê³ , ê·¸ë§ˆì €ë„ {src_root}/standard/tests í´ë”ëŠ” ì§€ì›Œë„ ë¬´ë°©í•¨
+  - íŒŒì¼ ë³µì‚¬: {src_root}/win32/build/config.w32.h.in -> {src_root}/main/config.w32.h
+ * ë°”ì´ë„ˆë¦¬(dev/php5ts.lib ë§Œ ìˆìœ¼ë©´ ë¨)
+  - {VC ì†”ë£¨ì…˜ ë£¨íŠ¸}/include_php_dev/php5ts.lib
 
 
-¼öÁ¤ ³»¿ªÀÌ³ª Âü°íÇÑ ¸µÅ©, È÷½ºÅä¸®´Â ¾Æ·¡ ¸µÅ© Âü°íÇÏ¼¼¿ä.
+ìˆ˜ì • ë‚´ì—­ì´ë‚˜ ì°¸ê³ í•œ ë§í¬, íˆìŠ¤í† ë¦¬ëŠ” ì•„ë˜ ë§í¬ ì°¸ê³ í•˜ì„¸ìš”.
 http://enjoytools.net/xe/index.php?document_srl=2018
 
 [end of this file]
