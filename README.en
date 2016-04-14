@@ -21,7 +21,7 @@ Linux: CentOS 6.3 / PHP 5.3.3
 
 Compiler
 MS-Windows: Microsoft VisualStudio 2012 Express / Visual C 2012 (VC11)
-(PHP7RC7 - Visual C 2015 (VC14))
+(PHP 7.0.5 - Visual C 2015 (VC14))
 Linux: gcc 4.4.7
 
 
@@ -30,7 +30,7 @@ More preparation
 PHP
  * Copy 4 folders at {VC solution dir}/include_php_src from php source.
   - ext, main, TSRM, win32, Zend
-   -> Not need filed/dirs in ext dir except standard, also not need {src_root}/standard/tests dir
+   -> Not need files/dirs in ext dir except standard, also not need {src_root}/standard/tests dir
   - Copy file: {src_root}/win32/build/config.w32.h.in -> {src_root}/main/config.w32.h
  * Library from php binaries(need only a file -> dev/php5ts.lib)
   - {VC solution dir}/include_php_dev/php5ts.lib
