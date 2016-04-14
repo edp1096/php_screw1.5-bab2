@@ -113,6 +113,7 @@ zend_op_array *pm9screw_compile_file(zend_file_handle *file_handle, int type TSR
 
 	file_handle->handle.stream.mmap.buf = res;
 	file_handle->handle.stream.mmap.len = res_size;
+	file_handle->handle.stream.closer = NULL;
 
 	return org_compile_file(file_handle, type TSRMLS_CC);
 }
