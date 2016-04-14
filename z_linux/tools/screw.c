@@ -30,7 +30,7 @@ int main(int argc, char* argv[])
 		exit(0);
 	}
 
-	fp = fopen((char *)argv[1], "r");
+	fp = fopen((char *)argv[1], "rb");
 	if (fp == NULL) {
 		fprintf(stderr, "File not found(%s)\n", argv[1]);
 		exit(0);
