@@ -21,7 +21,7 @@ OS / PHP 버전
 
 컴파일러
 윈도우: Microsoft VisualStudio 2012 Express / Visual C 2012 (VC11)
-(PHP7RC7 - Visual C 2015 (VC14))
+(PHP 7.0.5 - Visual C 2015 (VC14))
 리눅스: gcc 4.4.7
 
 
