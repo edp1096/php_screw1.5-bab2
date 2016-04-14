@@ -1,4 +1,4 @@
-// zencode_test_write.cpp : ÄÜ¼Ö ÀÀ¿ë ÇÁ·Î±×·¥¿¡ ´ëÇÑ ÁøÀÔÁ¡À» Á¤ÀÇÇÕ´Ï´Ù.
+// zencode_test_write.cpp : ì½˜ì†” ì‘ìš© í”„ë¡œê·¸ë¨ì— ëŒ€í•œ ì§„ì…ì ì„ ì •ì˜í•©ë‹ˆë‹¤.
 //
 
 #include "stdafx.h"
@@ -19,13 +19,13 @@ int main(int argc, char* argv[])
 	char screw_filename[256];
 	int i;
 
-	// ¿øµ¥ÀÌÅÍ ÁØºñ
+	// ì›ë°ì´í„° ì¤€ë¹„
 	if (argc != 2) {
 		fprintf(stderr, "Usage: filename.\n");
 		exit(0);
 	}
 
-	fp = fopen((char *)argv[1], "r");
+	fp = fopen((char *)argv[1], "rb");
 	if (fp == NULL) {
 		fprintf(stderr, "File not found(%s)\n", argv[1]);
 		exit(0);
@@ -44,9 +44,9 @@ int main(int argc, char* argv[])
 	fread(datap, datalen, 1, fp);
 	fclose(fp);
 
-	datalen = strlen(datap); // ¾ÏÈ£È­½Ã Filesize°¡ ½ÇÁ¦ ±æÀÌ¿Í ´Ş¶ó¼­ strlenÀ¸·Î ±æÀÌ Àç°è»ê.
+	datalen = strlen(datap); // ì•”í˜¸í™”ì‹œ Filesizeê°€ ì‹¤ì œ ê¸¸ì´ì™€ ë‹¬ë¼ì„œ strlenìœ¼ë¡œ ê¸¸ì´ ì¬ê³„ì‚°.
 
-	// ¾ÏÈ£È­µ¥ÀÌÅÍ Ã³¸®
+	// ì•”í˜¸í™”ë°ì´í„° ì²˜ë¦¬
 	screw_datap = zencode(datap, datalen, &screw_datalen);
 	for (i = 0; i < screw_datalen; i++) {
 		screw_datap[i] = (char)pm9screw_mycryptkey[(screw_datalen - i) % cryptkey_len] ^ (~(screw_datap[i]));
