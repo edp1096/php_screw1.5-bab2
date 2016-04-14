@@ -16,7 +16,7 @@ see file LICENSE for license details
 컴파일 환경
 
 OS / PHP 버전
-윈도우: MS-Windows 8.1 / PHP 5.6.15, 7.0.0RC7
+윈도우: MS-Windows 8.1 / PHP 5.6.15, 7.0.5
 리눅스: CentOS 6.3 / PHP 5.3.3
 
 컴파일러
