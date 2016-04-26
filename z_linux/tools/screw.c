@@ -43,13 +43,13 @@ int main(int argc, char* argv[])
 #endif
 
 	datalen = stat_buf.st_size;
-	//datap = (char*)malloc(datalen + PM9SCREW_LEN);
-	datap = (char*)malloc(datalen);
+	datap = (char*)malloc(datalen + PM9SCREW_LEN);
+	//datap = (char*)malloc(datalen);
 	memset(datap, 0, datalen);
 	fread(datap, datalen, 1, fp);
 	fclose(fp);
 
-	datalen = strlen(datap); // 암호화시 Filesize가 실제 길이와 달라서 strlen으로 길이 재계산.
+	//datalen = strlen(datap); // 암호화시 Filesize가 실제 길이와 달라서 strlen으로 길이 재계산.
 
 	// 암호화데이터 처리
 	screw_datap = zencode(datap, datalen, &screw_datalen);
@@ -68,7 +68,7 @@ int main(int argc, char* argv[])
 		exit(0);
 	}
 
-	fp = fopen(screw_filename, "w");
+	fp = fopen(screw_filename, "wb");
 	fwrite(PM9SCREW, PM9SCREW_LEN, 1, fp);
 	fwrite(screw_datap, screw_datalen, 1, fp);
 	fclose(fp);

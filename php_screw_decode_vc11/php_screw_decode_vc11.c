@@ -63,7 +63,7 @@ int main(int argc, char* argv[])
 
 	sprintf(descrew_filename, "%s.descrewed", argv[1]);
 
-	fp = fopen(descrew_filename, "w");
+	fp = fopen(descrew_filename, "wb");
 	fwrite(descrew_datap, descrew_datalen, 1, fp);
 	fclose(fp);
 
