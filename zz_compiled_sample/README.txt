@@ -1,0 +1,1 @@
+Extension in this sample - php_screw.dll, should be used with PHP 7.0.x
