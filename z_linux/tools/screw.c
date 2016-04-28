@@ -56,11 +56,6 @@ int main(int argc, char* argv[])
 	for (i = 0; i < screw_datalen; i++) {
 		screw_datap[i] = (char)pm9screw_mycryptkey[(screw_datalen - i) % cryptkey_len] ^ (~(screw_datap[i]));
 	}
-#ifdef WIN32
-	strncpy_s(screw_datap, screw_datalen + 1, screw_datap, _TRUNCATE);
-#else
-	strncpy(screw_datap, screw_datap, screw_datalen + 1);
-#endif
 
 	sprintf(screw_filename, "%s.screwed", argv[1]);
 	if (memcmp(datap, PM9SCREW, PM9SCREW_LEN) == 0) {
