@@ -48,12 +48,6 @@ char *pm9screw_ext_fopen(FILE *fp)
 	}
 	newdatap = zdecode(datap, datalen, &newdatalen);
 
-#ifdef WIN32
-	strncpy_s(newdatap, newdatalen + 1, newdatap, _TRUNCATE);
-#else
-	strncpy(newdatap, newdatap, newdatalen + 1);
-#endif
-
 	result = "";
 
 	free(datap);
@@ -161,4 +155,3 @@ PHP_MSHUTDOWN_FUNCTION(php_screw)
 
 	return SUCCESS;
 }
-
