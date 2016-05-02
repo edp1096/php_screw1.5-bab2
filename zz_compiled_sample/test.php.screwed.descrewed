@@ -1,6 +1,6 @@
 <?php
 
-echo "Å×½ºÆ® / Counting Start.\r\n";
+echo "í…ŒìŠ¤íŠ¸ / Counting Start.\r\n";
 
 $i=0;
 
@@ -8,17 +8,17 @@ for($i=0;$i<20;$i++) {
   echo $i."\r\n";
 }
 
-echo "Å×½ºÆ® counting end.\r\n"; // ±×³É ÁÖ¼®ÁÖ¼®ÁÖ¼®
+echo "í…ŒìŠ¤íŠ¸ counting end.\r\n"; // ê·¸ëƒ¥ ì£¼ì„ì£¼ì„ì£¼ì„
 
 function x($a,$b) {
-    $div=intval($a/$b);    //a/bÀÇ °ªÀ» Á¤¼öÇüÀ¸·Î º¯È¯
-    $rest=$a%$b;    //a/bÀÇ ³ª´°¼À ÇÑ ÈÄ ³ª¸ÓÁö °ªÀ» º¯¼ö rest ÇÒ´çÇÔ
-    return array($div,$rest);    //array($div,$rest)¸¦ Àü´ÞÇÔ
+    $div=intval($a/$b);    //a/bì˜ ê°’ì„ ì •ìˆ˜í˜•ìœ¼ë¡œ ë³€í™˜
+    $rest=$a%$b;    //a/bì˜ ë‚˜ëˆ—ì…ˆ í•œ í›„ ë‚˜ë¨¸ì§€ ê°’ì„ ë³€ìˆ˜ rest í• ë‹¹í•¨
+    return array($div,$rest);    //array($div,$rest)ë¥¼ ì „ë‹¬í•¨
 }
 
-list($c,$d)=x(30,7);    // Àü´Þ¹ÞÀº array(30,7)À» º¯¼ö c,d¿¡ ÇÒ´çÇÔ
+list($c,$d)=x(30,7);    // ì „ë‹¬ë°›ì€ array(30,7)ì„ ë³€ìˆ˜ c,dì— í• ë‹¹í•¨
 
-echo ("¸ò = ".$c."<br>\r\n");
-echo ("³ª¸ÓÁö = ".$d."<br>r\n");
+echo ("ëª« = ".$c."<br>\r\n");
+echo ("ë‚˜ë¨¸ì§€ = ".$d."<br>r\n");
 
 ?>

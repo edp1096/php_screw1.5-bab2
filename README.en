@@ -17,12 +17,12 @@ Compiling condition
 
 OS's / PHP's version
 MS-Windows: MS-Windows 8.1 / PHP 5.6.15, 7.0.5
-Linux: CentOS 6.3 / PHP 5.3.3
+Linux: CentOS 6.3, 7 / PHP 5.3.3, 7.0.6
 
 Compiler
 MS-Windows: Microsoft VisualStudio 2012 Express / Visual C 2012 (VC11)
 (PHP 7.0.5 - Visual C 2015 (VC14))
-Linux: gcc 4.4.7
+Linux: gcc 4.4.7, 4.8.5
 
 
 More preparation
