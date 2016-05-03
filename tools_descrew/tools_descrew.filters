@@ -29,7 +29,7 @@
     <ClCompile Include="zencode.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="php_screw_encode_vc11.c">
+    <ClCompile Include="screw.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

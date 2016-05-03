@@ -1,0 +1,14 @@
+폴더 설명
+
+* compiled
+ - 컴파일 결과물 저장
+ - 빌드 중간에 생기는 작업물 저장
+* include_php
+ - PHP 소스
+ - PHP *.lib (윈도우용 PHP 배포판에서 dev폴더에 있는 그것)
+* php_screw : PHP extension 소스
+* tools_descrew : 콘솔상에서 동작하는 디코더
+* tools_screw : 콘솔상에서 동작하는 인코더
+* z_key_manage : 사용자 seed 키 (이 값을 자기만의 키값으로 바꿔서 컴파일,운영하면 됨)
+* z_linux : 리눅스용 php_screw 원본 (정확하게는 원본이 아니라 버그 수정한 것임)
+* zz_compiled_sample : 샘플용도로 컴파일한 결과물

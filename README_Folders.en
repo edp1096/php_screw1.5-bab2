@@ -1,0 +1,14 @@
+Explanation of each folders
+
+* compiled
+ - compiled binaries will be placed here
+ - related files when build (obj, pdb etc.)
+* include_php
+ - php source
+ - php *.lib file (dev folder at PHP binaries)
+* php_screw : PHP extension source
+* tools_descrew : Console decoding util
+* tools_screw : Console encoding util
+* z_key_manage : Seed key
+* z_linux : Original PHP-Screw for linux
+* zz_compiled_sample : Sample compiled files

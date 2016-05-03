@@ -21,25 +21,16 @@
     <ClInclude Include="stdafx.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="my_screw.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="php_screw\php_screw.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="zencode.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="stdafx.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="php_screw_php_ext_vc11.c">
+    <ClCompile Include="zencode.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\php_screw_decode_vc11\zencode_test_read_vc11.vcxproj.filters" />
+    <ClCompile Include="screw.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

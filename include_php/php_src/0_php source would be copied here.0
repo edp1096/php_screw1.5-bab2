@@ -1,0 +1,11 @@
+* Prepare below 5 folders from PHP source.
+ - ext
+ - main
+ - TSRM
+ - win32
+ - Zend
+
+* Copy and rename below file
+ - from : win32/build/config.w32.h.in
+ - to : main/config.w32.h
+ 

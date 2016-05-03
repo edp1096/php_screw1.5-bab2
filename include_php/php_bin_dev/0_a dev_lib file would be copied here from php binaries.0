@@ -1,0 +1,4 @@
+php7nts_x64.lib - PHP7.0.x Non-Thread Safe 64Bit
+php7nts_x86.lib - PHP7.0.x Non-Thread Safe 32Bit
+php7ts_x64.lib - PHP7.0.x Thread Safe 64Bit
+php7ts_x86.lib - PHP7.0.x Thread Safe 32Bit

@@ -28,12 +28,12 @@ OS / PHP 버전
 추가 준비
 
 PHP
- * 소스(에서 아래 4개의 폴더를 솔루션 루트폴더로 복사)
+ * 소스(에서 아래 4개의 폴더를 솔루션 {VC 솔루션 루트}/include_php/php_src 폴더로 복사)
   - ext, main, TSRM, win32, Zend
    -> ext폴더는 standard만 있으면 되고, 그마저도 {src_root}/standard/tests 폴더는 지워도 무방함
   - 파일 복사: {src_root}/win32/build/config.w32.h.in -> {src_root}/main/config.w32.h
  * 바이너리(dev/php5ts.lib 만 있으면 됨)
-  - {VC 솔루션 루트}/include_php_dev/php5ts.lib
+  - {VC 솔루션 루트}/include_php_dev/php7ts.lib
 
 
 수정 내역이나 참고한 링크, 히스토리는 아래 링크 참고하세요.
