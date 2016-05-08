@@ -1,0 +1,6 @@
+php_screw C코드를 PHP코드로 포팅
+
+* php_screw.php : 인코더/디코더 함수
+* my_screw.php : 헤더 및 Seed Key
+
+* test.php : 테스트용 sample파일

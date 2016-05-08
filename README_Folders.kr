@@ -11,4 +11,5 @@
 * tools_screw : 콘솔상에서 동작하는 인코더
 * z_key_manage : 사용자 seed 키 (이 값을 자기만의 키값으로 바꿔서 컴파일,운영하면 됨)
 * z_linux : 리눅스용 php_screw 원본 (정확하게는 원본이 아니라 버그 수정한 것임)
+* z_php_script : screw, descrew 소스를 PHP스크립트로 작성 (C소스와 내용 같고, 간단하게 함수화만 해놨음)
 * zz_compiled_sample : 샘플용도로 컴파일한 결과물

@@ -11,4 +11,5 @@ Explanation of each folders
 * tools_screw : Console encoding util
 * z_key_manage : Seed key
 * z_linux : Original PHP-Screw for linux
+* z_php_script : Converted screw,descrew from C to PHP script
 * zz_compiled_sample : Sample compiled files
