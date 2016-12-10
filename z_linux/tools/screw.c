@@ -24,7 +24,7 @@ int main(int argc, char* argv[])
 	char screw_filename[256];
 	int i;
 
-	// 원데이터 준비
+	// Prepare original data
 	if (argc != 2) {
 		fprintf(stderr, "Usage: filename.\n");
 		exit(0);
