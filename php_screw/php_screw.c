@@ -48,12 +48,17 @@ char *pm9screw_ext_fopen(FILE *fp)
 	}
 	newdatap = zdecode(datap, datalen, &newdatalen);
 
-	result = "";
+	result = (char*)malloc(newdatalen);
+	memset(result, 0, newdatalen + 1);
+
+	//printf("datalen: en-%zd/de-%zd/zdecode-%d\r\n", strlen(datap), strlen(newdatap), newdatalen);
+	//printf("newdatap: %s\r\n", newdatap);
+	strncpy(result, newdatap, newdatalen);
 
 	free(datap);
-	//free(newdatap);
+	free(newdatap);
 
-	return newdatap;
+	return result;
 }
 
 zend_op_array *(*org_compile_file)(zend_file_handle *file_handle, int type TSRMLS_DC);
@@ -93,23 +98,28 @@ zend_op_array *pm9screw_compile_file(zend_file_handle *file_handle, int type TSR
 
 	fread(buf, PM9SCREW_LEN, 1, fp);
 	if (memcmp(buf, PM9SCREW, PM9SCREW_LEN) != 0) {
-		printf("not a crypted file.\r\n");
+		//printf("Not a crypted file. - %s\r\n", file_handle->filename);
+
 		fclose(fp);
 		return org_compile_file(file_handle, type TSRMLS_CC);
+	} else {
+		//printf("A crypted file. - %s\r\n", file_handle->filename);
+
+		res = pm9screw_ext_fopen(fp);
+		res_size = strlen(res);
+
+		//printf("%s\r\nlength-%zd\r\n", res, res_size);
+
+		if (zend_stream_fixup(file_handle, &buffer, &size TSRMLS_CC) == FAILURE) {
+			return NULL;
+		}
+
+		file_handle->handle.stream.mmap.buf = res;
+		file_handle->handle.stream.mmap.len = res_size;
+		file_handle->handle.stream.closer = NULL;
+
+		return org_compile_file(file_handle, type TSRMLS_CC);
 	}
-
-	res = pm9screw_ext_fopen(fp);
-	res_size = strlen(res);
-
-	if (zend_stream_fixup(file_handle, &buffer, &size TSRMLS_CC) == FAILURE) {
-		return NULL;
-	}
-
-	file_handle->handle.stream.mmap.buf = res;
-	file_handle->handle.stream.mmap.len = res_size;
-	file_handle->handle.stream.closer = NULL;
-
-	return org_compile_file(file_handle, type TSRMLS_CC);
 }
 
 zend_module_entry php_screw_module_entry = {
@@ -133,7 +143,7 @@ ZEND_GET_MODULE(php_screw);
 PHP_MINFO_FUNCTION(php_screw)
 {
 	php_info_print_table_start();
-	php_info_print_table_header(2, "php_screw support", "enabled");
+	php_info_print_table_header(2, "php_screw-bab2", "enabled");
 	php_info_print_table_end();
 }
 
