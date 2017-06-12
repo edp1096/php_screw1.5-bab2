@@ -16,12 +16,15 @@ Salt key manage: {VC solution dir}/z_key_manage/my_screw.h
 Compiling condition
 
 Tested OS's / PHP's version
-MS-Windows: MS-Windows 8.1 / PHP 5.6.15, 7.0.5, 7.1.0 alpha2
+MS-Windows: MS-Windows 8.1, 10 / PHP 5.6.15, 7.0.5, 7.1.0 alpha2, 7.2.0 alpha1
 Linux: CentOS 6.3, 7 / PHP 5.3.3, 7.0.6
 
-Compiler
+Tested Compiler
 MS-Windows: Microsoft VisualStudio 2012 Express / Visual C 2012 (VC11)
-(PHP 7.0.5 - Visual C 2015 (VC14))
+(
+PHP 7.0.5 - Visual C 2015 (VC14)
+PHP 7.2.0 alpha1 - Visual C 2012 (VC11)
+)
 Linux: gcc 4.4.7, 4.8.5
 
 
@@ -34,7 +37,13 @@ PHP
   - Copy file: {src_root}/win32/build/config.w32.h.in -> {src_root}/main/config.w32.h
  * Library from php binaries(need only a file -> dev/php7ts.lib)
   - {VC solution dir}/include_php_dev/php7ts.lib
-
+ * Pre-define which Match MS-Visual C Compiler version with PHP runtime
+  : Those are just tags as identifier when PHP verifying extensions.
+    You can compile 7.2 with MSVC 2012(VC11).
+    matching MSVC version for this extension with PHP runtime compiled MSVC version is not needed.
+  - PHP 5.x : VC11
+  - PHP 7.1 : VC14
+  - PHP 7.2 : VC15
 
 Please see below link when you need to check modification, references, histories.
 http://enjoytools.net/xe/index.php?document_srl=2018
